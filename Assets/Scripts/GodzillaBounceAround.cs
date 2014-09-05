@@ -3,8 +3,8 @@ using System.Collections;
 
 public class GodzillaBounceAround : MonoBehaviour
 {
-    private bool GoLeft = true;
-    private bool GoRight = false;
+    private bool GoLeft = false;
+    private bool GoRight = true;
 
     // Use this for initialization
     void Start()
@@ -18,13 +18,13 @@ public class GodzillaBounceAround : MonoBehaviour
         if (GoLeft)
         {   
             rigidbody.velocity = new Vector3(0, 0, 0);
-            Quaternion newRotation = Quaternion.AngleAxis(90, Vector3.up);
+            Quaternion newRotation = Quaternion.AngleAxis(270, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.1f);
         } 
         else if (GoRight)
         {   
             rigidbody.velocity = new Vector3(0, 0, 0);
-            Quaternion newRotation = Quaternion.AngleAxis(270, Vector3.up);
+            Quaternion newRotation = Quaternion.AngleAxis(90, Vector3.up);
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, 0.1f);
         }
 

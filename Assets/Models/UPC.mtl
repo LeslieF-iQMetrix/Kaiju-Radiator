@@ -1,0 +1,8 @@
+newmtl material6
+Ka 0.250000 0.250000 0.250000
+Kd 0.518000 0.518000 0.518000
+Ks 0.596000 0.596000 0.596000
+Ns 20.000000
+Tr 0.000000
+illum 2
+map_Kd C:\Users\Crystal\Desktop\catface2.jpg
